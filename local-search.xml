@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>Chapter II 语言可用性的强化</title>
+    <link href="/2023/08/17/Chapter-II-%E8%AF%AD%E8%A8%80%E5%8F%AF%E7%94%A8%E6%80%A7%E7%9A%84%E5%BC%BA%E5%8C%96/"/>
+    <url>/2023/08/17/Chapter-II-%E8%AF%AD%E8%A8%80%E5%8F%AF%E7%94%A8%E6%80%A7%E7%9A%84%E5%BC%BA%E5%8C%96/</url>
+    
+    <content type="html"><![CDATA[<h2 id="2-1-常量"><a href="#2-1-常量" class="headerlink" title="2.1 常量"></a>2.1 常量</h2><h3 id="nullptr"><a href="#nullptr" class="headerlink" title="nullptr"></a>nullptr</h3><p>C++11引入了<code>nullptr</code>关键字，其类型为<code>nullptr_t</code>，专门用来区分「空指针 &amp; 0」。<code>nullptr</code>能够隐式转换为任何指针，也能够进行是否相等的比较。</p><h3 id="constexpr"><a href="#constexpr" class="headerlink" title="constexpr"></a>constexpr</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-function"><span class="hljs-keyword">constexpr</span> <span class="hljs-type">int</span> <span class="hljs-title">fibonacci</span><span class="hljs-params">(<span class="hljs-type">const</span> <span class="hljs-type">int</span> n)</span> </span>&#123;<br>    <span class="hljs-keyword">return</span> n == <span class="hljs-number">1</span> || n == <span class="hljs-number">2</span> ? <span class="hljs-number">1</span> : <span class="hljs-built_in">fibonacci</span>(n<span class="hljs-number">-2</span>) + <span class="hljs-built_in">fibonacci</span>(n<span class="hljs-number">-1</span>);<br>&#125;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>test</title>
     <link href="/2023/08/17/test/"/>
     <url>/2023/08/17/test/</url>
